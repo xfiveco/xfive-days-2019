@@ -32,4 +32,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-underline-offset: 1em;
 }

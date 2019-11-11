@@ -24,6 +24,9 @@ h1::before {
 
 a {
     color: currentColor;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--color-distinct);
+    text-underline-offset: 0.2em;
 }
 
 em,
