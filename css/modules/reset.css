@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body, html {
+    margin: 0;
+    padding: 0;
     background: var(--color-background);
     font-family: "Victor Mono", "Courier", sans-serif;
     line-height: 1.25;
@@ -24,10 +24,6 @@ h1::before {
 
 a {
     color: currentColor;
-}
-
-li li {
-    margin-left: var(--spacing-default);
 }
 
 em,
