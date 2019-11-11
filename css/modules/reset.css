@@ -7,7 +7,7 @@
 body, html {
     background: var(--color-background);
     font-family: "Victor Mono", "Courier", sans-serif;
-    line-height: 1.2;
+    line-height: 1.25;
     padding: var(--spacing-default);
     color: var(--color-neutral);
 }
@@ -22,12 +22,25 @@ h1::before {
     content: "# ";
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 a {
     color: currentColor;
+}
+
+li li {
+    margin-left: var(--spacing-default);
+}
+
+em,
+strong {
+    color: var(--color-distinct);
+}
+
+em::before,
+em::after {
+    content: "_";
+}
+
+strong::before,
+strong::after {
+    content: "**";
 }

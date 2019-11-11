@@ -1,32 +1,31 @@
-.intro {
+.page {
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 10vh auto;
 }
 
-.intro__items {
+.page__items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 calc(var(--spacing-default) * -1);
     border-bottom: 1px dashed var(--color-distinct);
 }
 
-.intro__item {
+.page__item {
     display: grid;
     border-top: 1px dashed var(--color-distinct);
-    height: 15vh;
+    height: 25vh;
 }
 
-.intro__item:nth-child(even) {
+.page__item:nth-child(even) {
     border-left: 1px dashed var(--color-distinct);
 }
 
-.intro__item:last-child:nth-child(odd) {
+.page__item:last-child:nth-child(odd) {
     grid-column-end: span 3;
 }
 
-.intro__link {
+.page__link {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-    
