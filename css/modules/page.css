@@ -1,10 +1,10 @@
 .page {
     display: grid;
-    grid-template-rows: 10vh auto;
 }
 
 .page__header {
-    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .page__items {
