@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: var(--color-background);
+    font-family: "Victor Mono", "Courier", sans-serif;
+    line-height: 1.2;
+    padding: var(--spacing-default);
+    color: var(--color-neutral);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-distinct);
+}
+
+h1::before {
+    content: "# ";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: currentColor;
+}

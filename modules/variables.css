@@ -1,0 +1,7 @@
+:root {
+    --color-background: black;
+    --color-distinct: yellow;
+    --color-neutral: lightgrey;
+    
+    --spacing-default: 1rem;
+}
