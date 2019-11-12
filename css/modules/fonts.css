@@ -1,0 +1,21 @@
+---
+---
+
+@font-face {
+    font-family: "Victor Mono";
+    font-style: normal;
+    src: url("{{ site.url }}/fonts/VictorMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Victor Mono";
+    font-style: italic;
+    src: url("{{ site.url }}/fonts/VictorMono-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Victor Mono";
+    font-style: normal;
+    font-weight: bold;
+    src: url("{{ site.url }}/fonts/VictorMono-Bold.woff2") format("woff2");
+}
