@@ -3,8 +3,12 @@
 }
 
 .page__header {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem calc(var(--spacing-default) * -1) 0;
+    padding-bottom: 2rem;
+}
+
+.page__header--with-border {
+    border-bottom: 1px dashed var(--color-distinct);
 }
 
 .page__content {
