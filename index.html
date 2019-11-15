@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <title>Xfive Days 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}" />
 </head>
 <body>
 <div class="page">
@@ -17,7 +17,7 @@
             {% for page in site.pages %}
                 {% if page.title != null %}
                     <li class="page__item">
-                        <a class="page__link" href="{{ page.url }}">{{ page.title }}</a>
+                        <a class="page__link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}

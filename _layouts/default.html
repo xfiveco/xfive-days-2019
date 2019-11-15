@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <title>Xfive Days 2019 - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}" />
 </head>
 <body>
 <div class="page">
@@ -16,7 +16,7 @@
     <main class="page__content">
         {{ content }}
     </main>
-    <a class="back-link" href="{{ site.url }}">← Show Menu</a>
+    <a class="back-link" href="/{{ site.baseurl }}">← Show Menu</a>
 </div>
 <footer class="main-footer">
     <p>Artur Kot 2019</p>
