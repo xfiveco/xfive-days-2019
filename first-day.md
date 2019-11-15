@@ -1,11 +1,12 @@
 ---
 layout: default
 title: First Day
+lang: pl
 ---
 
-## Detailed Intro to Accessibility
+## Wprowadzenie do dostępności cyfrowej.
 
-1. Wprowadzenie do dostępności cyfrowej. Co to jest dostępność?
+1. Co to jest dostępność?
 2. Kogo dotyka brak dostępności?
 3. Rodzaje niepełnosprawności, sposoby postrzega nia informacji i specjalne potrzeby użytkowników.
 4. Standardy dostępności (web i mobile). Co to jest WCAG 2.1?
