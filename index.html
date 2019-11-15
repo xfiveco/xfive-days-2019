@@ -14,15 +14,13 @@
     <h1 class="page__header">Xfive Days 2019</h1>
     <nav>
         <ul class="page__items">
-            <li class="page__item">
-                <a class="page__link" href="{{ site.url }}/agenda.html">Agenda</a>
-            </li>
-            <li class="page__item">
-                <a class="page__link" href="{{ site.url }}/first-day">Monday (25th of Nov)</a>
-            </li>
-            <li class="page__item">
-                <a class="page__link" href="{{ site.url }}/about">About</a>
-            </li>
+            {% for page in site.pages %}
+                {% if page.title != null %}
+                    <li class="page__item">
+                        <a class="page__link" href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
         </ul>
     </nav>
 <div>
