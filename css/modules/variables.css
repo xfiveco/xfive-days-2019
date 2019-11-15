@@ -1,7 +1,17 @@
 :root {
-    --color-background: black;
-    --color-distinct: yellow;
-    --color-neutral: lightgrey;
-    
-    --spacing-default: 1rem;
+	--color-background: lightgrey;
+	--color-distinct: red;
+	--color-neutral: black;
+
+	--spacing-default: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: black;
+		--color-distinct: yellow;
+		--color-neutral: lightgrey;
+
+		--spacing-default: 1rem;
+	}
 }
