@@ -8,7 +8,7 @@ html {
     padding: 0;
     background: var(--color-background);
     font-family: "Victor Mono", "Courier", sans-serif;
-    line-height: 1.25;
+    line-height: 1.5;
     padding: var(--spacing-default);
     color: var(--color-neutral);
 }
