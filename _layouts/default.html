@@ -1,5 +1,9 @@
 <!doctype html>
-<html lang="en">
+{% if page.lang == null  %}
+    <html lang="en">
+{% else  %}
+    <html lang="{{ page.lang }}">
+{% endif %}
 <head>
     <meta charset="UTF-8" />
     <title>Xfive Days 2019 - {{ page.title }}</title>
