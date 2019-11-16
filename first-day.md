@@ -17,3 +17,7 @@ lang: pl
 9. Badanie/sprawdzanie dostępności - metodyka, narzędzia wspomagające testowanie.
 10. Dobre praktyki w tworzeniu (projektowaniu, i badaniu dostępnych stron internetowych i aplikacji mobilnych.
 11. Sesja Q&A - pytania i odpowiedzi.
+
+**Start o 10:00**
+
+**Czas trwania szkolenia: 6 godzin**
