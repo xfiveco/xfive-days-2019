@@ -22,7 +22,7 @@ lang: pl
     - Suwaki,
     - Wykresy, mapy (np. SVG).
 
-**Czas trwania szkolenia: 5 godzilla.**
+**Czas trwania szkolenia: 5 godzin.**
 
 ### Przerwy:
 
