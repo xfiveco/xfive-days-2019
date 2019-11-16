@@ -6,14 +6,26 @@ lang: pl
 
 ## ARIA na dostępnych stronach www 
 
-1. Wprowadzenie do dostępności cyfrowej. Co to jest dostępność?
-2. Kogo dotyka brak dostępności?
-3. Rodzaje niepełnosprawności, sposoby postrzega nia informacji i specjalne potrzeby użytkowników.
-4. Standardy dostępności (web i mobile). Co to jest WCAG 2.1?
-5. Prawo, a dostępność - jakie przepisy, w jakim zakresie i od kogo wymagają dostępności cyfrowej?
-6. W oparciu o wytyczne i kryteria sukcesu WCAG 2.1 przejście przez poszczególne zagadnienia dostępności treści internetowych wraz z demonstracją przykładów "na żywo".
-7. Dostępność aplikacji mobilnych (iOS/Android).
-8. Tworzenie dostępnych treści z perspektywy redaktora.
-9. Badanie/sprawdzanie dostępności - metodyka, narzędzia wspomagające testowanie.
-10. Dobre praktyki w tworzeniu (projektowaniu, i badaniu dostępnych stron internetowych i aplikacji mobilnych.
-11. Sesja Q&A - pytania i odpowiedzi.
+1. Grupy użytkowników narażone na wykluczenie cyfrowe i ich aplikacje asystujące (w tym prezentacja działania programów czytających).
+2. Krótko o WCAG 2.1.
+3. WAI-ARIA. Czym jest i jak stosować?
+    - Najczęściej używane role i właściwości,
+    - Podstawowe zasady użycia ARIA,
+    - Role i właściwości w praktyce:
+    - Landmarks,
+    - Ukrywanie treści,
+    - Komunikaty i ostrzeżenia,
+    - Opisywanie formularzy i komunikatów,
+    - Live regions,
+    - Okienka dialogowe,
+    - Zakładki,
+    - Suwaki,
+    - Wykresy, mapy (np. SVG).
+
+**Czas trwania szkolenia: 5 godzilla.**
+
+### Przerwy:
+
+* 11.00 - 11.10
+* 12.30 - 13.15
+* 14.15 – 14.30
