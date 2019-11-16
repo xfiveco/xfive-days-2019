@@ -23,6 +23,7 @@ lang: pl
     - Wykresy, mapy (np. SVG).
 
 **Start o 10:00**
+
 **Czas trwania szkolenia: 5 godzin**
 
 
