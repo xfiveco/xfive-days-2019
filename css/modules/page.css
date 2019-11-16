@@ -4,7 +4,7 @@
 
 .page__header {
     margin: 2rem calc(var(--spacing-default) * -1) 0;
-    padding-bottom: 2rem;
+    padding: 0 var(--spacing-default) 2rem;
 }
 
 .page__header--with-border {

@@ -8,9 +8,18 @@ html {
     padding: 0;
     background: var(--color-background);
     font-family: "Victor Mono", "Courier", sans-serif;
-    line-height: 1.5;
-    padding: var(--spacing-default);
+    line-height: 1.5;   
     color: var(--color-neutral);
+}
+
+body {
+    padding: calc(var(--spacing-default) * 2) var(--spacing-default);
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: calc(var(--spacing-default) * 2);
+    }
 }
 
 h1 {
