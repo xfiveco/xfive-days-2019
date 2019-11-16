@@ -40,6 +40,14 @@ h2::before {
     content: "## ";
 }
 
+h3 {
+    color: var(--color-distinct);
+}
+
+h2::before {
+    content: "### ";
+}
+
 a {
     color: currentColor;
     text-decoration-style: wavy;
