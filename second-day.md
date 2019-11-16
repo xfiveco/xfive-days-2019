@@ -22,9 +22,11 @@ lang: pl
     - Suwaki,
     - Wykresy, mapy (np. SVG).
 
-**Czas trwania szkolenia: 5 godzin.**
+**Start o 10:00**
+**Czas trwania szkolenia: 5 godzin**
 
-### Przerwy:
+
+### Przewidywane przerwy:
 
 * 11.00 - 11.10
 * 12.30 - 13.15
