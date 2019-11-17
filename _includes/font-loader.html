@@ -1,0 +1,28 @@
+<script>
+    if ("fonts" in document) {
+        const fonts = [
+            new FontFace(
+                "Victor Mono",
+                "url({{ site.siteurl }}/fonts/VictorMono-Regular.woff2) format('woff2')"
+            ),
+
+            new FontFace(
+                "Vicor Mono",
+                "url({{ site.siteurl }}/fonts/VictorMono-Bold.woff2) format('woff2')",
+                { style: "italic" }
+            ),
+
+            new FontFace(
+                "Vicor Mono",
+                "url({{ site.siteurl }}/fonts/VictorMono-Bold.woff2) format('woff2')",
+                { weight: "bold" }
+            )
+        ];
+
+        Promise
+            .all(fonts.map(font => font.load()))
+            .then(loadedFonts => loadedFonts.forEach(font => {
+                document.fonts.add(font);
+            }));
+    }
+</script>
