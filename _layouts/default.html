@@ -1,15 +1,10 @@
 <!doctype html>
-{% if page.lang == null  %}
-    <html lang="en">
-{% else  %}
+{% if page.lang  %}
     <html lang="{{ page.lang }}">
+{% else  %}
+    <html lang="en">
 {% endif %}
-<head>
-    <meta charset="UTF-8" />
-    <title>Xfive Days 2019 - {{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}" />
-</head>
+{% include head.html %}
 <body>
 <div class="page">
     <h1 class="page__header page__header--with-border">{{ page.title }}</h1>
@@ -18,8 +13,6 @@
     </main>
     <a class="back-link" href="/{{ site.baseurl }}">← Show Menu</a>
 </div>
-<footer class="main-footer">
-    <p>Artur Kot 2019</p>
-</footer>
+{% include main-footer.html %}
 </body>
 </html>
