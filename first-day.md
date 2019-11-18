@@ -1,23 +1,22 @@
 ---
 layout: default
 title: First Day
-lang: pl
 ---
 
-## Wprowadzenie do dostępności cyfrowej.
+## Introduction to Web Accessibility
 
-1. Co to jest dostępność?
-2. Kogo dotyka brak dostępności?
-3. Rodzaje niepełnosprawności, sposoby postrzega nia informacji i specjalne potrzeby użytkowników.
-4. Standardy dostępności (web i mobile). Co to jest WCAG 2.1?
-5. Prawo, a dostępność - jakie przepisy, w jakim zakresie i od kogo wymagają dostępności cyfrowej?
-6. W oparciu o wytyczne i kryteria sukcesu WCAG 2.1 przejście przez poszczególne zagadnienia dostępności treści internetowych wraz z demonstracją przykładów "na żywo".
-7. Dostępność aplikacji mobilnych (iOS/Android).
-8. Tworzenie dostępnych treści z perspektywy redaktora.
-9. Badanie/sprawdzanie dostępności - metodyka, narzędzia wspomagające testowanie.
-10. Dobre praktyki w tworzeniu (projektowaniu, i badaniu dostępnych stron internetowych i aplikacji mobilnych.
-11. Sesja Q&A - pytania i odpowiedzi.
+1. What is Web Accessibility?
+2. Who is affected by it?
+3. Types of disabilities, ways of perceiving the content, special users' needs.
+4. Accessibility standards (for the web and mobile applications). What is WCAG 2.1?
+5. Law and accessibility - what regulations, to what extent and from whom do they require accessibility?
+6. Based on WCAG 2.1's guidelines and criteria, we go through specific issues of web accessibility along with demonstration of live examples.
+7. Accessibility in mobile applications (iOS/Android).
+8. Creating accessible content from the editor's perspective.
+9. Research/verification of accessibility - methodology, tools helping to test accessibility.
+10. Good practices in designing and testing web content and mobile applications.
+11. Q&A session.
 
-**Start o 10:00**
+**Starts at 10:00 a.m.**
 
-**Czas trwania szkolenia: 6 godzin**
+**Expected duration of the workshop: 6 hours** (including breaks)
