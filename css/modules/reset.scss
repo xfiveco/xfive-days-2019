@@ -69,3 +69,10 @@ strong::before,
 strong::after {
     content: "**";
 }
+
+button,
+.button {
+    background: var(--color-distinct);
+    padding: 0.2rem 1rem;
+    color: var(--color-background);
+}
