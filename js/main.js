@@ -3,16 +3,17 @@ import {
     Object3D,
     PerspectiveCamera,
     WebGLRenderer,
-    BoxBufferGeometry,
+    IcosahedronBufferGeometry,
     MeshBasicMaterial,
     InstancedMesh,
     Color
 } from "https://unpkg.com/three@0.110.0/build/three.module.js";
 
-const getRandom = (min, max) => Math.random() * (max - min) + min;
+let leftBoundary = 0;
+let rightBoundary = 0;
 const { innerWidth, innerHeight } = window;
 const scene = new Scene();
-const camera = new PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
+const camera = new PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
 const renderer = new WebGLRenderer();
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(innerWidth, innerHeight);
@@ -22,13 +23,15 @@ const color = new Color(
         .getPropertyValue("--color-distinct")
         .trim()
 );
-const totalNumber = Math.max(50, Math.floor(window.innerWidth / 10));
+const totalNumber = Math.max(10, Math.floor(window.innerWidth / 50));
 const dummies = new Array(totalNumber).fill().map(() => new Object3D());
-const speeds = new Array(totalNumber).fill(0).map(() => getRandom(0.01, 0.02));
-const positionsY = new Array(totalNumber).fill(0).map(() => getRandom(-3, 3));
-
-const geometry = new BoxBufferGeometry(1, 1, 1);
-const material = new MeshBasicMaterial({ color, wireframe: true });
+const speeds = new Array(totalNumber).fill(0).map(() => getRandom(0.001, 0.01));
+const positionsY = new Array(totalNumber).fill(0).map(() => getRandom(-2, 2));
+const geometry = new IcosahedronBufferGeometry();
+const material = new MeshBasicMaterial({
+    color,
+    wireframe: true
+});
 const cubes = new InstancedMesh(geometry, material, totalNumber);
 scene.add(cubes);
 
@@ -40,7 +43,8 @@ function animate() {
 
     speeds.forEach((speed, index) => {
         dummies[index].position.set(
-            -totalNumber * 0.04 + index / (totalNumber * 0.04),
+            leftBoundary +
+                (index * (rightBoundary - leftBoundary)) / speeds.length,
             positionsY[index],
             0
         );
@@ -52,17 +56,33 @@ function animate() {
 
     cubes.instanceMatrix.needsUpdate = true;
 }
-const onWindowResize = () => {
+function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-};
+    setScreenBoundaries();
+}
 
-animate();
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
+function setScreenBoundaries() {
+    const left = ((camera.fov / 180) * Math.PI) / -2;
+    const right = ((camera.fov / 180) * Math.PI) / 2;
+    const adjacent = camera.position.distanceTo(scene.position);
+    leftBoundary = Math.tan(left) * adjacent * camera.aspect;
+    rightBoundary = Math.tan(right) * adjacent * camera.aspect;
+}
+
+setScreenBoundaries();
 renderer.domElement.classList.add("animated-bg");
 document.body.appendChild(renderer.domElement);
 renderer.domElement.addEventListener("touchmove", event => {
     event.preventDefault();
 });
 window.addEventListener("resize", onWindowResize, false);
+animate();
+setTimeout(() => {
+    renderer.domElement.classList.add("is-ready");
+}, 200);
