@@ -13,7 +13,7 @@ title: First Day
 6. Based on WCAG 2.1's guidelines and criteria, we go through specific issues of web accessibility along with demonstration of live examples.
 7. Accessibility in mobile applications (iOS/Android).
 8. Creating accessible content from the editor's perspective.
-9. Research/verification of accessibility - methodology, tools helping to test accessibility.
+9. Testing/Verification of accessibility - methodology, tools helping to test accessibility.
 10. Good practices in designing and testing web content and mobile applications.
 11. Q&A session.
 
