@@ -6,10 +6,13 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background: var(--color-background);
     font-family: "Victor Mono", "Courier", sans-serif;
-    line-height: 1.5;   
+    line-height: 1.5;
     color: var(--color-neutral);
+}
+
+html {
+    background: var(--color-background);
 }
 
 body {
