@@ -1,6 +1,7 @@
-@import "modules/variables.css";
-@import "modules/reset.css";
-@import "modules/page.css";
-@import "modules/main-footer.css";
-@import "modules/back-link.css";
-@import "modules/animated-bg.css";
+@import "modules/variables.scss";
+@import "modules/reset.scss";
+@import "modules/page.scss";
+@import "modules/main-footer.scss";
+@import "modules/back-link.scss";
+@import "modules/animated-bg.scss";
+@import "modules/cta-button.scss";

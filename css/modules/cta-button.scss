@@ -1,0 +1,47 @@
+@keyframes cta-button-animation {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.cta-button {
+    animation: 3s linear infinite cta-button-animation;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-distinct);
+    padding: 0.2rem 3.2rem 0.2rem 1rem;
+    color: var(--color-background);
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    &::before {
+        right: 1.5rem;
+        width: 1rem;
+        height: 1rem;
+        background: var(--color-background);
+    }
+    
+    &::after {
+        right: 1rem;
+        width: 0;
+        height: 0;
+        border-right: 0.8rem solid var(--color-background);
+        border-top: 0.4rem solid transparent;
+        border-bottom: 0.4rem solid transparent;
+    }
+}
