@@ -35,6 +35,7 @@ const totalNumber = Math.max(10, Math.floor(window.innerWidth / 50));
 const dummies = new Array(totalNumber).fill().map(() => new Object3D());
 const speeds = new Array(totalNumber).fill(0).map(() => getRandom(0.001, 0.01));
 const positionsY = new Array(totalNumber).fill(0).map(() => getRandom(-2, 2));
+const positionsZ = new Array(totalNumber).fill(0).map(() => getRandom(-1, 0));
 const geometry = new IcosahedronBufferGeometry();
 const material = new MeshBasicMaterial({
     color,
@@ -54,7 +55,7 @@ function animate() {
             leftBoundary +
                 (index * (rightBoundary - leftBoundary)) / speeds.length,
             positionsY[index],
-            0
+            positionsZ[index]
         );
         dummies[index].rotation.x += speed;
         dummies[index].rotation.y += speed;
