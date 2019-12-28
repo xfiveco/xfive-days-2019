@@ -10,7 +10,11 @@
     <nav>
         <ul class="page__items">
             {% for page in site.pages %}
-                {% if page.title != null %}
+                {% if page.highlight == true %}
+                    <li class="page__item page__item--highlight">
+                        <a class="page__link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+                    </li>
+                {% elsif page.title != null %}
                     <li class="page__item">
                         <a class="page__link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
                     </li>

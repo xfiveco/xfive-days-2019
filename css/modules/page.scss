@@ -25,12 +25,14 @@
 
 .page__item {
     display: grid;
-    border-top: 1px dashed var(--color-distinct);
+    border: 1px dashed var(--color-distinct);
+    border-bottom: 0 none;
     height: 25vh;
-}
 
-.page__item:nth-child(even) {
-    border-left: 1px dashed var(--color-distinct);
+    &--highlight {
+        order: -1;
+        border: 10px dashed var(--color-distinct);
+    }
 }
 
 .page__item:last-child:nth-child(odd) {

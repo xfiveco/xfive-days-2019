@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Resources
+highlight: true
 ---
 
 ## Mikołaj Rotnicki
